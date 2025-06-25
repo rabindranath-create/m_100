@@ -239,7 +239,7 @@ Obstacle_gen <- function(gamma, d, noPoints, lambda){
                             'prob'=prob, 'status'=status)
 }
 # 9. create obstacle function - mixed case
-Mix_gen <- function(gamma, d, noPoints, no_c, no_o, lambda, cost){
+Mix_gen <- function(gamma, d, noPoints, no_c, no_o, lambda, cost = 5){
   bgwin <- owin(c(10, 90),c(10, 90))
   kappa <- noPoints / (80*80)
   mypar <- list(beta = kappa, gamma = gamma, r = d) # r is the radius
